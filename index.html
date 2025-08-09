@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1 King West Hotel Toronto | Family-Friendly Stays, Iconic Location</title>
+  <meta name="description" content="Make family memories at 1 King West—suite-style comfort and a prime downtown Toronto location steps from transit, PATH, and top attractions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🏨</text></svg>">
+  <meta property="og:title" content="1 King West – Family-Friendly Downtown Toronto" />
+  <meta property="og:description" content="Spacious comfort, iconic address, steps to the best of Toronto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #0b1020;        /* deep night blue */
+      --fg: #ffffff;        /* white text */
+      --muted: #c9d4f0;     /* soft periwinkle */
+      --accent: #6ee7b7;    /* mint */
+      --gold: #f1c040;      /* highlight */
+      --ink: #141827;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+    /* Header */
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(6px); background: rgba(11,16,32,0.7); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    .brand { display:flex; align-items:center; gap:.75rem; font-weight:700; letter-spacing:.5px; }
+    .brand .logo { width:40px; height:40px; display:grid; place-items:center; background:linear-gradient(135deg, var(--gold), #fff1bd); color:#111; border-radius:12px; font-weight:800; }
+    .navlinks a { margin-left:1rem; font-weight:600; color: var(--muted); }
+
+    /* Hero */
+    .hero { position: relative; min-height: 72vh; display:grid; place-items:center; text-align:center; overflow:hidden; }
+    .hero::before { content:""; position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat; opacity:.32; filter: saturate(120%) contrast(105%); }
+    .hero .inner { position:relative; padding: 4rem 1rem; }
+    .badge { display:inline-block; padding:.35rem .6rem; border:1px solid rgba(255,255,255,.3); border-radius:999px; color:var(--muted); margin-bottom:1rem; font-size:.9rem; backdrop-filter: blur(4px); background: rgba(20,24,39,0.3); }
+    h1 { font-size: clamp(2rem, 4vw + 1rem, 3.4rem); line-height:1.08; margin:.25rem 0; }
+    .lede { color: var(--muted); font-size: clamp(1rem, 1.2vw + .8rem, 1.25rem); max-width: 720px; margin: .75rem auto 1.5rem; }
+    .cta { display:inline-block; background: linear-gradient(135deg, var(--accent), #b8ffde); color:#0a0f1f; padding:.9rem 1.15rem; border-radius:14px; font-weight:800; box-shadow: 0 10px 30px rgba(110,231,183,0.25); }
+    .cta.secondary { background: transparent; color: var(--fg); border:1px solid rgba(255,255,255,.2); margin-left:.6rem; }
+
+    /* Sections */
+    section { padding: 4rem 0; }
+    h2 { font-size: clamp(1.4rem, 1.8vw + .8rem, 2rem); margin: 0 0 1rem; }
+    .grid { display:grid; gap:1.25rem; }
+    @media(min-width: 900px){ .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+
+    .card { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1.1rem; }
+    .icon { font-size:1.6rem; margin-right:.4rem; }
+
+    /* Reasons */
+    .reasons { display:grid; gap:1rem; }
+    @media(min-width: 800px){ .reasons { grid-template-columns: repeat(3, 1fr); } }
+    .reason { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1rem; }
+    .reason h3 { margin:.25rem 0; font-size:1.1rem; }
+    .reason p { color: var(--muted); font-size:.98rem; }
+
+    /* Gallery */
+    .gallery { display:grid; grid-template-columns: repeat(6, 1fr); gap:.6rem; }
+    .gallery img { width:100%; height:160px; object-fit:cover; border-radius:12px; }
+    @media(max-width: 900px){ .gallery { grid-template-columns: repeat(3, 1fr); } }
+
+    /* Map */
+    .mapwrap { border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); }
+
+    /* Footer */
+    footer { padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.08); color: var(--muted); text-align:center; }
+
+    /* Utility */
+    .pill { display:inline-block; padding:.35rem .6rem; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:999px; font-size:.85rem; color: var(--muted); margin:.25rem .25rem 0 0; }
+    .flex { display:flex; gap:.5rem; flex-wrap:wrap; }
+  </style>
+
+  <!-- Basic Hotel schema for SEO (customize contact info if needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "1 King West Hotel",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 King St W",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "postalCode": "M5H 1A1",
+      "addressCountry": "CA"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Family-friendly suites", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Downtown location", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Transit at doorstep", "value": true }
+    ],
+    "url": "https://your-domain.example",
+    "telephone": "+1-000-000-0000"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">1K</div>
+          <div>1 King West</div>
+        </div>
+        <div class="navlinks">
+          <a href="#reasons">Why Choose Us</a>
+          <a href="#family">Family Value</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="inner">
+      <div class="badge">Toronto • Financial District • King & Yonge</div>
+      <h1>Suite‑Style Comfort. Iconic Address. Family‑Ready.</h1>
+      <p class="lede">At 1 King West, you’re in the center of it all—steps from subway and PATH, moments to Toronto’s top attractions, and space for the whole family to unwind.</p>
+      <a class="cta" href="#contact">Check Availability</a>
+      <a class="cta secondary" href="#reasons">See Why Families Love Us</a>
+    </div>
+  </section>
+
+  <section id="reasons">
+    <div class="container">
+      <h2>Why Choose 1 King West</h2>
+      <div class="reasons">
+        <div class="reason">
+          <div><span class="icon">📍</span><strong>Unbeatable Location</strong></div>
+          <p>At the corner of King & Yonge with **King Station** at the door and direct indoor access to Toronto’s PATH network—go anywhere, in any weather.</p>
+        </div>
+        <div class="reason">
+          <div><span class="icon">👨‍👩‍👧‍👦</span><strong>Family‑Friendly Value</strong></div>
+          <p>Relax with **spacious, suite‑style layouts** (many with kitchenettes), fast Wi‑Fi, and flexible bedding options ideal for parents and kids.</p>
+        </div>
+        <div class="reason">
+          <div><span class="icon">🏛️</span><strong>Historic & Iconic</strong></div>
+          <p>Set within a heritage landmark, blending classic architecture with modern comfort—an address as memorable as your trip.</p>
+        </div>
+        <div class="reason">
+          <div><span class="icon">🚶</span><strong>Walk to the Best of Toronto</strong></div>
+          <p>From here it’s an easy stroll to the **Hockey Hall of Fame**, **St. Lawrence Market**, the **Eaton Centre**, and the entertainment district.</p>
+        </div>
+        <div class="reason">
+          <div><span class="icon">🚇</span><strong>Effortless Transit</strong></div>
+          <p>Subway, streetcar, and PATH put attractions like the **CN Tower**, **Ripley’s Aquarium**, and the **Harbourfront** minutes away.</p>
+        </div>
+        <div class="reason">
+          <div><span class="icon">💼</span><strong>Business + Leisure</strong></div>
+          <p>Perfect for blended trips—easy access to the Financial District by day, and family fun by night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="family">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h2>Made for Families</h2>
+        <p>Whether it’s your first visit or a favorite return, families appreciate the comfort and flexibility of suite‑style spaces. Settle in, spread out, and enjoy downtown at your pace.</p>
+        <div class="flex" aria-label="Family highlights">
+          <span class="pill">Suite‑style layouts</span>
+          <span class="pill">Many kitchenettes</span>
+          <span class="pill">Crib‑friendly</span>
+          <span class="pill">Reliable Wi‑Fi</span>
+          <span class="pill">On‑site fitness</span>
+        </div>
+      </div>
+      <div>
+        <div class="gallery" aria-label="Photo gallery">
+          <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=800&auto=format&fit=crop" alt="Bright suite with seating area">
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop" alt="Cozy bedroom">
+          <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=800&auto=format&fit=crop" alt="Kitchenette detail">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Lobby seating">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Family relaxing">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="City view">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Steps to Everything</h2>
+        <p>Right at **1 King Street West**, you’re plugged into the energy of Toronto. Coffee shops, parks, and major attractions are on your doorstep, and you can move with ease by subway, streetcar, or PATH—directly connected indoors.</p>
+        <ul>
+          <li>King Subway Station — 0 min</li>
+          <li>PATH Underground Network — inside</li>
+          <li>Hockey Hall of Fame — ~5 min walk</li>
+          <li>St. Lawrence Market — ~10 min walk</li>
+          <li>Scotiabank Arena — ~12 min walk</li>
+          <li>CN Tower & Aquarium — ~20 min walk or quick transit</li>
+        </ul>
+      </div>
+      <div class="mapwrap">
+        <iframe title="Map of 1 King West" src="https://www.google.com/maps?q=1+King+St+W,+Toronto&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h2>Ready to Plan Your Stay?</h2>
+        <p>Have questions about family accommodations or group bookings? We’re here to help.</p>
+        <p><strong>Email:</strong> <a href="mailto:reservations@your-domain.example">reservations@your-domain.example</a><br>
+           <strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000‑0000</a></p>
+        <p>
+          <!-- If you host on Netlify, you can enable Netlify Forms by adding data-netlify -->
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <div style="display:grid; gap:.6rem;">
+              <input name="name" placeholder="Your Name" required style="padding:.8rem; border-radius:10px; border:1px solid rgba(255,255,255,.2); background:#121830; color:#fff">
+              <input name="email" type="email" placeholder="Email" required style="padding:.8rem; border-radius:10px; border:1px solid rgba(255,255,255,.2); background:#121830; color:#fff">
+              <textarea name="message" placeholder="Tell us about your trip" rows="4" style="padding:.8rem; border-radius:10px; border:1px solid rgba(255,255,255,.2); background:#121830; color:#fff"></textarea>
+              <button type="submit" class="cta" style="width:max-content;">Send Message</button>
+            </div>
+          </form>
+        </p>
+        <small style="color:var(--muted)">Replace contact details with your own. Netlify Forms requires no backend.</small>
+      </div>
+      <div class="card">
+        <h2>Good to Know</h2>
+        <p>Parking, crib availability, and late check‑out are subject to availability. Please confirm details when booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="y"></span> 1 King West. All rights reserved.</div>
+      <div>This is a promotional site. For official hotel information, contact the property directly.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
